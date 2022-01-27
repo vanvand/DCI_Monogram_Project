@@ -23,15 +23,21 @@ body {
 
 /* header styling */
 header {
+<<<<<<< HEAD
     margin: 15px;
     width: calc(100% - 30px);
     padding: 10px;
+=======
+    width: 100%;
+    padding: 20px;
+>>>>>>> ce69c57c5e4d2f2cb867e458eedfdfe1b9843545
     background: var(--blue);
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase; 
+<<<<<<< HEAD
     position: fixed;
     z-index: 1000;
 }
@@ -41,6 +47,14 @@ header a {
     text-decoration: none;
     color: var(--orange-light);
     font-weight: 400;
+=======
+}
+
+header a {
+    text-decoration: none;
+    color: var(--orange-light);
+    font-weight: 300;
+>>>>>>> ce69c57c5e4d2f2cb867e458eedfdfe1b9843545
     letter-spacing: 2px;
 }
 header div {
@@ -50,10 +64,14 @@ header div {
 header img {
     margin-right: 15px;
 }
+<<<<<<< HEAD
 header div a {
     font-size: 14px;
     font-weight: 600;
 }
+=======
+
+>>>>>>> ce69c57c5e4d2f2cb867e458eedfdfe1b9843545
 nav ul {
     display: flex;
     align-items: center;
@@ -100,6 +118,7 @@ header a:hover {
 nav li:nth-of-type(2) a:hover {
     color: white;
 }
+<<<<<<< HEAD
 .main-img {
     height: 80vh;
     background-image: url(./images/shop-cta-xl.webp);
@@ -136,4 +155,6 @@ nav li:nth-of-type(2) a:hover {
     font-weight: lighter;
 
 }
+=======
+>>>>>>> ce69c57c5e4d2f2cb867e458eedfdfe1b9843545
 
