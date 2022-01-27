@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #1a2456;
+    --orange-bright: #ff501c;
+    --orange: #ff8b68;
+    --light: #f0efed;
+    --dark: #080b1b;
+    --orange-light: #e5c4c0
+}
+
+body {
+    background: var(--light);
+    font-family: 'Prompt', sans-serif;
+}
+
+/* header styling */
+header {
+    margin: 15px;
+    width: calc(100% - 30px);
+    padding: 10px;
+    background: var(--blue);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase; 
+    position: fixed;
+    z-index: 1000;
+}
+
+header a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--orange-light);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+header img {
+    margin-right: 15px;
+}
+header div a {
+    font-size: 14px;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a { 
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.fa-shopping-bag {
+    font-size: 1.5rem;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+
+    background: white;
+    border: 1px solid #333;
+    /* box-shadow: 3px 3px 5px grey,
+    -3px -3px 5px grey; */
+    z-index: 1000;
+}
+.sub-menu li {
+    padding: 10px;
+}
+.sub-menu a {
+    color: var(--dark);
+    padding: 20px;
+}
+
+/* header hover */
+.main-menu>li:hover .sub-menu {
+    display: block;
+}
+.sub-menu li:hover {
+    background: #d5d5d5;
+}
+header a:hover {
+    color: var(--orange-bright)
+}
+nav li:nth-of-type(2) a:hover {
+    color: white;
+}
+.main-img {
+    height: 80vh;
+    background-image: url(./images/shop-cta-xl.webp);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center; 
+    justify-content: flex-end;
+    position: relative;
+}
+/* .text-right {
+    width: 25%;
+    text-align: right;
+    position: relative;
+    top: 50%; 
+}*/
+.main-img h1 {
+    width: 30%;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--blue);
+    position: relative;
+    top: 40%;
+    left: 60%;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+.main-img p  {
+    font-size: 18px;
+    color: var(--blue);
+    position: relative;
+    top: 40%;
+    left: 60%;
+    font-weight: 300;
+    font-weight: lighter;
+
+}
+
