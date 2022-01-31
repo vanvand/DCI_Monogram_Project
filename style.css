@@ -25,45 +25,53 @@ body {
 header {
     margin: 15px;
     width: calc(100% - 30px);
-    padding: 10px;
+    padding: 0.5rem 0.5rem;
     background: var(--blue);
+    text-transform: uppercase; 
     
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-transform: uppercase; 
+    
     position: fixed;
     z-index: 1000;
 }
 
+.logo {
+    /* place logo within a tag */
+    display: flex;
+    align-items: center;
+ }
+
 header a {
     font-size: 12px;
-    text-decoration: none;
     color: var(--orange-light);
     font-weight: 400;
     letter-spacing: 2px;
+    margin-right: 20px;
 }
-header div {
-    display: flex;
-    align-items: center;
+header a:hover {
+    color: var(--orange-bright)
 }
-header img {
-    margin-right: 15px;
-}
-header div a {
-    font-size: 14px;
-    font-weight: 600;
-}
+
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    flex-flow: row wrap;
     list-style-type: none;
 }
-
-nav a { 
-    margin-right: 20px;
-    text-decoration: none;
-}
+@media all and (max-width: 500px) {
+    header {
+      flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+  }
 
 .fa-shopping-bag {
     font-size: 1.5rem;
@@ -75,8 +83,6 @@ nav a {
 
     background: white;
     border: 1px solid #333;
-    /* box-shadow: 3px 3px 5px grey,
-    -3px -3px 5px grey; */
     z-index: 1000;
 }
 .sub-menu li {
@@ -94,9 +100,7 @@ nav a {
 .sub-menu li:hover {
     background: #d5d5d5;
 }
-header a:hover {
-    color: var(--orange-bright)
-}
+
 nav li:nth-of-type(2) a:hover {
     color: white;
 }
@@ -288,11 +292,11 @@ display: block;
 }
 footer {
     width: 100%;
-    height: 300px;
+    height: fit-content;
     background-color: var(--blue);
     display: flex;
     margin-top: 30px;
-    justify-content: center;
+    justify-content: space-around;
     color: var(--orange-light);
     
 }
